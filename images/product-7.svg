@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    </filter>
+    <pattern id="grain-tile" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" filter="url(#grain)"/>
+    </pattern>
+    <linearGradient id="bg" x1="0.2" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#f2e6e9"/>
+      <stop offset="1" stop-color="#d9bfc8"/>
+    </linearGradient>
+    <linearGradient id="juice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8788f"/>
+      <stop offset="1" stop-color="#5a3448"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#bg)"/>
+  <circle cx="300" cy="400" r="225" fill="#ffffff" opacity="0.26"/>
+  <ellipse cx="300" cy="584" rx="204" ry="20" fill="#5a3448" opacity="0.16"/>
+
+  <rect x="116" y="396" width="68" height="150" rx="9" fill="#ffffff" opacity="0.36"/>
+  <rect x="120" y="410" width="60" height="130" rx="7" fill="#5a3448" opacity="0.92"/>
+  <rect x="133" y="362" width="34" height="40" fill="#c9a227"/>
+  <rect x="130" y="354" width="40" height="12" rx="2" fill="#c9a227"/>
+  <rect x="132" y="396" width="36" height="52" fill="#f9f5ee" opacity="0.95"/>
+  <text x="150" y="418" text-anchor="middle" font-family="Georgia, serif" font-size="11" letter-spacing="1" fill="#3b2a20">BT</text>
+  <rect x="116" y="396" width="68" height="150" rx="9" fill="none" stroke="#2b2420" stroke-opacity="0.16"/>
+  <rect x="191" y="422" width="68" height="150" rx="9" fill="#ffffff" opacity="0.36"/>
+  <rect x="195" y="436" width="60" height="130" rx="7" fill="#b8762f" opacity="0.92"/>
+  <rect x="208" y="388" width="34" height="40" fill="#c9a227"/>
+  <rect x="205" y="380" width="40" height="12" rx="2" fill="#c9a227"/>
+  <rect x="207" y="422" width="36" height="52" fill="#f9f5ee" opacity="0.95"/>
+  <text x="225" y="444" text-anchor="middle" font-family="Georgia, serif" font-size="11" letter-spacing="1" fill="#3b2a20">BT</text>
+  <rect x="191" y="422" width="68" height="150" rx="9" fill="none" stroke="#2b2420" stroke-opacity="0.16"/>
+  <rect x="266" y="396" width="68" height="150" rx="9" fill="#ffffff" opacity="0.36"/>
+  <rect x="270" y="410" width="60" height="130" rx="7" fill="#2f4a45" opacity="0.92"/>
+  <rect x="283" y="362" width="34" height="40" fill="#c9a227"/>
+  <rect x="280" y="354" width="40" height="12" rx="2" fill="#c9a227"/>
+  <rect x="282" y="396" width="36" height="52" fill="#f9f5ee" opacity="0.95"/>
+  <text x="300" y="418" text-anchor="middle" font-family="Georgia, serif" font-size="11" letter-spacing="1" fill="#3b2a20">BT</text>
+  <rect x="266" y="396" width="68" height="150" rx="9" fill="none" stroke="#2b2420" stroke-opacity="0.16"/>
+  <rect x="341" y="422" width="68" height="150" rx="9" fill="#ffffff" opacity="0.36"/>
+  <rect x="345" y="436" width="60" height="130" rx="7" fill="#8a5a12" opacity="0.92"/>
+  <rect x="358" y="388" width="34" height="40" fill="#c9a227"/>
+  <rect x="355" y="380" width="40" height="12" rx="2" fill="#c9a227"/>
+  <rect x="357" y="422" width="36" height="52" fill="#f9f5ee" opacity="0.95"/>
+  <text x="375" y="444" text-anchor="middle" font-family="Georgia, serif" font-size="11" letter-spacing="1" fill="#3b2a20">BT</text>
+  <rect x="341" y="422" width="68" height="150" rx="9" fill="none" stroke="#2b2420" stroke-opacity="0.16"/>
+  <rect x="416" y="396" width="68" height="150" rx="9" fill="#ffffff" opacity="0.36"/>
+  <rect x="420" y="410" width="60" height="130" rx="7" fill="#9c9184" opacity="0.92"/>
+  <rect x="433" y="362" width="34" height="40" fill="#c9a227"/>
+  <rect x="430" y="354" width="40" height="12" rx="2" fill="#c9a227"/>
+  <rect x="432" y="396" width="36" height="52" fill="#f9f5ee" opacity="0.95"/>
+  <text x="450" y="418" text-anchor="middle" font-family="Georgia, serif" font-size="11" letter-spacing="1" fill="#3b2a20">BT</text>
+  <rect x="416" y="396" width="68" height="150" rx="9" fill="none" stroke="#2b2420" stroke-opacity="0.16"/>
+  <rect x="26" y="26" width="548" height="748" fill="none" stroke="#2b2420" stroke-opacity="0.14" stroke-width="1"/>
+  <rect width="600" height="800" fill="url(#grain-tile)" opacity="0.5"/>
+</svg>

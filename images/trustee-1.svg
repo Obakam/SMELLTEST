@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    </filter>
+    <pattern id="grain-tile" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" filter="url(#grain)"/>
+    </pattern>
+    <linearGradient id="pbg" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#efe4d6"/>
+      <stop offset="1" stop-color="#d7c3ad"/>
+    </linearGradient>
+    <radialGradient id="face" cx="0.62" cy="0.30" r="0.85">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.10"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#pbg)"/>
+  <circle cx="300" cy="268" r="214" fill="#ffffff" opacity="0.30"/>
+  <circle cx="300" cy="268" r="214" fill="none" stroke="#2b2420" stroke-opacity="0.12"/>
+
+  <!-- shoulders / jacket -->
+  <path d="M300 392 C404 392 486 452 508 600 L92 600 C114 452 196 392 300 392 Z" fill="#243b4a"/>
+  <!-- shirt -->
+  <path d="M300 386 C332 396 346 430 346 476 L346 600 L254 600 L254 476 C254 430 268 396 300 386 Z" fill="#f7f2ea"/>
+  <!-- lapels -->
+  <path d="M300 392 L232 470 L258 600 L286 470 Z" fill="#243b4a"/>
+  <path d="M300 392 L368 470 L342 600 L314 470 Z" fill="#243b4a"/>
+  <path d="M300 392 L232 470 L258 600 L286 470 Z" fill="#ffffff" opacity="0.10"/>
+  <path d="M300 392 L368 470 L342 600 L314 470 Z" fill="#ffffff" opacity="0.04"/>
+  <!-- collar -->
+  <path d="M300 386 L266 416 L300 404 Z" fill="#f7f2ea"/>
+  <path d="M300 386 L334 416 L300 404 Z" fill="#f7f2ea"/>
+  <path d="M300 386 L266 416 L300 404 Z" fill="#000000" opacity="0.05"/>
+  <path d="M300 386 L334 416 L300 404 Z" fill="#000000" opacity="0.02"/>
+
+  
+  <circle cx="300" cy="128" r="52" fill="#3b2a20"/>
+  <circle cx="300" cy="128" r="52" fill="#ffffff" opacity="0.06"/>
+
+  <!-- neck -->
+  <path d="M264 336 L264 398 Q300 418 336 398 L336 336 Z" fill="#b57a52"/>
+
+  <!-- ears -->
+  <ellipse cx="212" cy="266" rx="14" ry="21" fill="#c98d63"/>
+  <ellipse cx="388" cy="266" rx="14" ry="21" fill="#c98d63"/>
+  
+  <circle cx="207" cy="292" r="8" fill="#c9a227"/>
+  <circle cx="393" cy="292" r="8" fill="#c9a227"/>
+
+  <!-- head -->
+  <ellipse cx="300" cy="250" rx="92" ry="110" fill="#c98d63"/>
+  <ellipse cx="300" cy="250" rx="92" ry="110" fill="url(#face)"/>
+
+  
+  <path d="M208 252 A92 110 0 0 1 392 252 L392 222
+           Q346 200 300 200 Q254 200 208 222 Z" fill="#3b2a20"/>
+
+  <!-- brows -->
+  <path d="M252 238 Q270 228 288 236" fill="none" stroke="#3b2a20" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+  <path d="M348 238 Q330 228 312 236" fill="none" stroke="#3b2a20" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- eyes -->
+  <ellipse cx="270" cy="258" rx="6.5" ry="7.5" fill="#241f1c"/>
+  <ellipse cx="330" cy="258" rx="6.5" ry="7.5" fill="#241f1c"/>
+  <circle cx="272" cy="255" r="2" fill="#ffffff" opacity="0.9"/>
+  <circle cx="332" cy="255" r="2" fill="#ffffff" opacity="0.9"/>
+
+  <!-- nose -->
+  <path d="M300 262 L300 288 Q305 293 311 289" fill="none" stroke="#b57a52" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- lips -->
+  <path d="M280 308 Q300 300 320 308 Q300 322 280 308 Z" fill="#9c4a37" opacity="0.9"/>
+
+  <!-- cheek warmth -->
+  <ellipse cx="252" cy="286" rx="18" ry="11" fill="#9c4a37" opacity="0.13"/>
+  <ellipse cx="348" cy="286" rx="18" ry="11" fill="#9c4a37" opacity="0.13"/>
+
+  
+
+  <!-- frame -->
+  <rect x="22" y="22" width="556" height="556" fill="none" stroke="#ffffff" stroke-opacity="0.45"/>
+  <rect width="600" height="600" fill="url(#grain-tile)" opacity="0.5"/>
+</svg>

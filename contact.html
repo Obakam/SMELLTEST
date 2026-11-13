@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inquiries &amp; Appointments — SMELLTEST</title>
+<meta name="description" content="Send an inquiry or request a scent consultation at the SMELLTEST atelier in Victoria Island, Lagos.">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body data-page="contact">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__name">SMELLTEST</span>
+      <span class="brand__tag">Fragrance &amp; Couture · Lagos</span>
+    </a>
+
+    <div class="header-actions">
+      <button class="bag-btn" type="button" id="bag-toggle" aria-expanded="false" aria-controls="bag" aria-label="Open shopping bag">
+        <svg width="17" height="17" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M2.6 5h10.8l-1.1 9.2H3.7L2.6 5Z" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M5.8 5V3.7a2.2 2.2 0 0 1 4.4 0V5" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+        <span class="bag-btn__count" id="bag-count">0</span>
+        <span class="visually-hidden">items in bag</span>
+      </button>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="trustees.html">Trustees</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="ticker">
+  <marquee behavior="scroll" direction="left" scrollamount="6" scrolldelay="30">
+    <span class="ticker__item">The Adíre Noir fragrance collection is here — eight scents, composed in Lagos</span>
+    <span class="ticker__dot" aria-hidden="true">◆</span>
+    <span class="ticker__item">Launch Evening · Victoria Island, Lagos · 12 December 2026</span>
+    <span class="ticker__dot" aria-hidden="true">◆</span>
+    <span class="ticker__item">Complimentary scent consultation with every 100 ml bottle</span>
+    <span class="ticker__dot" aria-hidden="true">◆</span>
+    <span class="ticker__item">Free delivery within Lagos on orders above ₦150,000</span>
+    <span class="ticker__dot" aria-hidden="true">◆</span>
+  </marquee>
+</div>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a><span aria-hidden="true">/</span>Contact</p>
+      <h1>Inquiries &amp; appointments</h1>
+      <p class="lede">
+        Whether it is a private scent consultation, a refill, an order question or a
+        press request — write to us, or reserve a slot at the atelier.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="form-layout">
+
+        <!-- Appointment booking -->
+        <div>
+          <div class="card">
+            <span class="eyebrow">Appointments</span>
+            <h2 class="h2--sm">Book a scent consultation</h2>
+            <p class="lede lede--sm mb-2">
+              Consultations run Tuesday to Saturday. Requests are confirmed by email
+              within 24 hours — this form holds your slot while we check the diary.
+            </p>
+
+            <form id="booking-form" novalidate>
+              <div class="field--split">
+                <div class="field">
+                  <label for="booking-name">Full name</label>
+                  <input type="text" id="booking-name" name="name" autocomplete="name" placeholder="e.g. Amara Nwosu">
+                  <p class="field__error" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="booking-phone">Phone number</label>
+                  <input type="tel" id="booking-phone" name="phone" autocomplete="tel" placeholder="+234 801 234 5678">
+                  <p class="field__error" role="alert"></p>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="booking-email">Email address</label>
+                <input type="email" id="booking-email" name="email" autocomplete="email" placeholder="you@mail.com">
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="booking-service">What is the appointment for?</label>
+                <select id="booking-service" name="service">
+                  <option value="">Select a service…</option>
+                  <option value="Scent consultation">Scent consultation</option>
+                  <option value="Private scent profiling">Private scent profiling</option>
+                  <option value="Bespoke fragrance commission">Bespoke fragrance commission</option>
+                  <option value="Refills &amp; bottle engraving">Refills &amp; bottle engraving</option>
+                  <option value="Press &amp; collaborations">Press &amp; collaborations</option>
+                </select>
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field--split">
+                <div class="field">
+                  <label for="booking-date">Preferred date</label>
+                  <input type="date" id="booking-date" name="date">
+                  <p class="field__error" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="booking-time">Preferred time</label>
+                  <select id="booking-time" name="time">
+                    <option value="">Select a time…</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:30">14:30</option>
+                    <option value="16:00">16:00</option>
+                  </select>
+                  <p class="field__error" role="alert"></p>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="booking-notes">Anything we should know? <span class="label__opt">(optional)</span></label>
+                <textarea id="booking-notes" name="notes" placeholder="Scents you love, ones you dislike, the occasion…"></textarea>
+              </div>
+
+              <label class="checkline" for="booking-consent">
+                <input type="checkbox" id="booking-consent" name="consent">
+                <span>I understand that a request is not a confirmed booking until the studio
+                  replies, and that a 48-hour cancellation notice applies.</span>
+              </label>
+
+              <button class="btn" type="submit">Request appointment</button>
+              <p class="form-status" id="booking-status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <!-- Saved requests -->
+          <div class="card mt-2">
+            <h3 class="h3--sm">Your saved requests</h3>
+            <p class="small-note mb-1">
+              Stored privately in this browser only, for your own reference.
+            </p><ul id="booking-list"></ul>
+          </div>
+        </div>
+
+        <!-- Contact details + inquiry -->
+        <div>
+          <div class="card">
+            <span class="eyebrow">Reach us</span>
+            <h3>The studio</h3>
+            <ul class="detail-list mt-1">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 15s5-4.6 5-8.4A5 5 0 0 0 3 6.6C3 10.4 8 15 8 15Z" stroke="currentColor" stroke-width="1.2"/>
+                  <circle cx="8" cy="6.6" r="1.8" stroke="currentColor" stroke-width="1.2"/>
+                </svg>
+                <div>
+                  <strong>Address</strong>
+                  14 Adeola Odeku Street,<br>Victoria Island, Lagos
+                </div>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M2 3h3l1.4 3.2-1.8 1.3a9.4 9.4 0 0 0 4 4l1.3-1.8L13 11v3a1 1 0 0 1-1 1A11 11 0 0 1 1 4a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.2"/>
+                </svg>
+                <div>
+                  <strong>Telephone</strong>
+                  <a href="tel:+2348012345678">+234 801 234 5678</a>
+                </div>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <rect x="1.5" y="3" width="13" height="10" rx="1" stroke="currentColor" stroke-width="1.2"/>
+                  <path d="m2 4 6 4.5L14 4" stroke="currentColor" stroke-width="1.2"/>
+                </svg>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:hello@smelltest.com">hello@smelltest.com</a>
+                </div>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <circle cx="8" cy="8" r="6.3" stroke="currentColor" stroke-width="1.2"/>
+                  <path d="M8 4.2V8l2.6 1.6" stroke="currentColor" stroke-width="1.2"/>
+                </svg>
+                <div>
+                  <strong>Opening hours</strong>
+                  Tuesday – Friday, 10:00 – 17:00<br>
+                  Saturday, 10:00 – 16:00
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card mt-2">
+            <span class="eyebrow">Inquiries</span>
+            <h3>Send a message</h3>
+            <form id="inquiry-form" novalidate class="mt-1">
+              <div class="field">
+                <label for="inquiry-name">Your name</label>
+                <input type="text" id="inquiry-name" name="name" autocomplete="name">
+                <p class="field__error" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="inquiry-email">Email address</label>
+                <input type="email" id="inquiry-email" name="email" autocomplete="email">
+                <p class="field__error" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="inquiry-subject">Subject</label>
+                <select id="inquiry-subject" name="subject">
+                  <option>Order &amp; delivery</option>
+                  <option>Product advice</option>
+                  <option>Refills &amp; engraving</option>
+                  <option>Press &amp; collaborations</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="inquiry-message">Message</label>
+                <textarea id="inquiry-message" name="message" placeholder="Tell us what you have in mind…"></textarea>
+                <p class="field__error" role="alert"></p>
+              </div>
+              <button class="btn" type="submit">Send inquiry</button>
+              <p class="form-status" id="inquiry-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--paper section--tight" id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Questions</span>
+        <h2>Before you visit</h2>
+      </div>
+
+      <div class="accordion reveal">
+        <details open>
+          <summary>How long does a fragrance last on skin?</summary>
+          <p>Our eau de parfum sits at 18–22% concentration and lasts six to eight hours; the extraits at 30–32% run ten to twelve. Longevity always depends on skin, heat and humidity — which is why we offer a consultation before you commit to a full bottle.</p>
+        </details>
+        <details>
+          <summary>Can I try before buying a full bottle?</summary>
+          <p>Yes. The Discovery Set contains five 2 ml vials of the signature collection, and the cost is credited against your first full bottle. Single samples are also available at the atelier.</p>
+        </details>
+        <details>
+          <summary>Can I cancel or move an appointment?</summary>
+          <p>Yes, with 48 hours' notice at no cost. Later cancellations are charged a small studio fee, which is credited against a future purchase.</p>
+        </details>
+        <details>
+          <summary>Do you ship outside Lagos?</summary>
+          <p>We deliver nationwide within Nigeria and ship internationally by DHL. Delivery is complimentary within Lagos on orders above ₦150,000. Fragrances travel by road within Nigeria, as air freight restrictions apply to alcohol-based liquids.</p>
+        </details>
+        <details>
+          <summary>How should I store my bottle?</summary>
+          <p>Keep it upright, away from direct sunlight and heat, with the cap on. A wardrobe shelf is better than a bathroom ledge. Return any 100 ml bottle to the atelier and we will refill it at 30% off.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Shopping bag -->
+<div class="bag" id="bag" aria-hidden="true">
+  <div class="bag__overlay" data-bag-close></div>
+  <aside class="bag__panel" role="dialog" aria-modal="true" aria-labelledby="bag-title">
+    <header class="bag__head">
+      <h2 id="bag-title">Your bag</h2>
+      <button class="bag__close" type="button" data-bag-close aria-label="Close bag">&times;</button>
+    </header>
+    <ul class="bag__items" id="bag-items"></ul>
+    <div class="bag__foot">
+      <p class="bag__total"><span>Subtotal</span> <span id="bag-total">&#8358;0</span></p>
+      <p class="small-note">Complimentary delivery within Lagos on orders above &#8358;150,000.</p>
+      <button class="btn btn--block" type="button" id="bag-checkout">Proceed to checkout</button>
+      <p class="form-status" id="bag-status" aria-live="polite"></p>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand__name">SMELLTEST</span>
+          <span class="brand__tag">Fragrance &amp; Couture · Lagos</span>
+        </a>
+        <p class="mt-1">14 Adeola Odeku Street<br>Victoria Island, Lagos<br>Nigeria</p>
+        <p><a href="mailto:hello@smelltest.com">hello@smelltest.com</a><br>
+           <a href="tel:+2348012345678">+234 801 234 5678</a></p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="trustees.html">Our Trustees</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="contact.html">Inquiries &amp; Appointments</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="dom-structure.html">DOM structure</a></li>
+          <li><a href="trustees.html#board">Board of Trustees</a></li>
+          <li><a href="contact.html#faq">Frequently asked</a></li>
+          <li><a href="events.html">Launch events</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>Tuesday – Friday, 10:00 – 17:00</li>
+          <li>Saturday, 10:00 – 16:00</li>
+          <li>Sunday &amp; Monday, closed</li>
+          <li><a href="contact.html">Book a private viewing</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p>© <span data-year>2026</span> SMELLTEST. All rights reserved.</p>
+      <p>CSC 106 / IFT 203 — Introduction to Web Technologies · Tutor-Marked Assessment</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+    <path d="M8 14V2M3 7l5-5 5 5" stroke="currentColor" stroke-width="1.2"/>
+  </svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

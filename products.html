@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products — SMELLTEST</title>
+<meta name="description" content="Shop SMELLTEST fragrances: eau de parfum, extrait de parfum, discovery sets and home scent, composed in Lagos.">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body data-page="products">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__name">SMELLTEST</span>
+      <span class="brand__tag">Fragrance &amp; Couture · Lagos</span>
+    </a>
+
+    <div class="header-actions">
+      <button class="bag-btn" type="button" id="bag-toggle" aria-expanded="false" aria-controls="bag" aria-label="Open shopping bag">
+        <svg width="17" height="17" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M2.6 5h10.8l-1.1 9.2H3.7L2.6 5Z" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M5.8 5V3.7a2.2 2.2 0 0 1 4.4 0V5" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+        <span class="bag-btn__count" id="bag-count">0</span>
+        <span class="visually-hidden">items in bag</span>
+      </button>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" aria-current="page">Products</a></li>
+        <li><a href="trustees.html">Trustees</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="ticker">
+  <marquee behavior="scroll" direction="left" scrollamount="6" scrolldelay="30">
+    <span class="ticker__item">The Adíre Noir fragrance collection is here — eight scents, composed in Lagos</span>
+    <span class="ticker__dot" aria-hidden="true">◆</span>
+    <span class="ticker__item">Launch Evening · Victoria Island, Lagos · 12 December 2026</span>
+    <span class="ticker__dot" aria-hidden="true">◆</span>
+    <span class="ticker__item">Complimentary scent consultation with every 100 ml bottle</span>
+    <span class="ticker__dot" aria-hidden="true">◆</span>
+    <span class="ticker__item">Free delivery within Lagos on orders above ₦150,000</span>
+    <span class="ticker__dot" aria-hidden="true">◆</span>
+  </marquee>
+</div>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">Home</a><span aria-hidden="true">/</span>Products</p>
+      <h1>The fragrance wardrobe</h1>
+      <p class="lede">
+        Eight compositions, blended and bottled by hand in our Victoria Island atelier.
+        Select a scent to read its notes — or add it straight to your bag.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+
+      <div class="filters" role="group" aria-label="Filter fragrances by type">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true">All fragrances</button>
+        <button class="chip" type="button" data-filter="edp" aria-pressed="false">Eau de Parfum</button>
+        <button class="chip" type="button" data-filter="extrait" aria-pressed="false">Extrait</button>
+        <button class="chip" type="button" data-filter="sets" aria-pressed="false">Discovery Sets</button>
+        <button class="chip" type="button" data-filter="home" aria-pressed="false">Home</button>
+      </div>
+
+      <p class="meta-note">Showing <span id="product-count">8 fragrances</span></p>
+
+      <div class="product-grid" id="product-grid">
+
+        <article class="product"
+          data-category="edp" data-category-label="Eau de Parfum"
+          data-id="adire-noir"
+          data-name="Adíre Noir"
+          data-price="₦185,000" data-price-value="185000"
+          data-size="100 ml"
+          data-image="images/product-1.svg"
+          data-notes="Oud, Damask rose, saffron, leather"
+          data-concentration="Eau de Parfum, 22%"
+          data-availability="In stock · ships in 48 hours"
+          data-description="The house signature. Smoked oud and Damask rose over a bed of saffron, finished with a leather dry-down that lasts twelve hours on skin.">
+          <button class="product__media" type="button" aria-label="Quick view: Adíre Noir">
+            <img src="images/product-1.svg" alt="Adíre Noir eau de parfum bottle" width="600" height="800">
+            <span class="product__tag">Bestseller</span>
+          </button>
+          <div class="product__body">
+            <h3 class="product__name">Adíre Noir</h3>
+            <p class="product__price">₦185,000 · 100 ml</p>
+            <p class="product__note">Oud, Damask rose, saffron</p>
+            <div class="product__foot">
+              <button class="btn btn--sm js-add" type="button">Add to bag</button>
+              <button class="link-arrow js-view" type="button">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product"
+          data-category="edp" data-category-label="Eau de Parfum"
+          data-id="iseyin-bloom"
+          data-name="Ìsẹ̀yìn Bloom"
+          data-price="₦145,000" data-price-value="145000"
+          data-size="100 ml"
+          data-image="images/product-2.svg"
+          data-notes="Ylang-ylang, neroli, tuberose"
+          data-concentration="Eau de Parfum, 20%"
+          data-availability="In stock · ships in 48 hours"
+          data-description="A white floral built for heat. Ylang-ylang from the Comoros sits on a soft tuberose heart, lifted by a bright neroli opening.">
+          <button class="product__media" type="button" aria-label="Quick view: Ìsẹ̀yìn Bloom">
+            <img src="images/product-2.svg" alt="Ìsẹ̀yìn Bloom eau de parfum bottle" width="600" height="800">
+            <span class="product__tag">New</span>
+          </button>
+          <div class="product__body">
+            <h3 class="product__name">Ìsẹ̀yìn Bloom</h3>
+            <p class="product__price">₦145,000 · 100 ml</p>
+            <p class="product__note">Ylang-ylang, neroli, tuberose</p>
+            <div class="product__foot">
+              <button class="btn btn--sm js-add" type="button">Add to bag</button>
+              <button class="link-arrow js-view" type="button">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product"
+          data-category="extrait" data-category-label="Extrait de Parfum"
+          data-id="harmattan"
+          data-name="Harmattan"
+          data-price="₦260,000" data-price-value="260000"
+          data-size="50 ml"
+          data-image="images/product-3.svg"
+          data-notes="Frankincense, dry cedar, black pepper"
+          data-concentration="Extrait de Parfum, 30%"
+          data-availability="Limited batch · 120 bottles"
+          data-description="The dry wind made wearable. Frankincense resin and cracked cedar, sharpened with black pepper and a trace of dust.">
+          <button class="product__media" type="button" aria-label="Quick view: Harmattan">
+            <img src="images/product-3.svg" alt="Harmattan extrait de parfum bottle" width="600" height="800">
+            <span class="product__tag">Limited</span>
+          </button>
+          <div class="product__body">
+            <h3 class="product__name">Harmattan</h3>
+            <p class="product__price">₦260,000 · 50 ml</p>
+            <p class="product__note">Frankincense, cedar, black pepper</p>
+            <div class="product__foot">
+              <button class="btn btn--sm js-add" type="button">Add to bag</button>
+              <button class="link-arrow js-view" type="button">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product"
+          data-category="edp" data-category-label="Eau de Parfum"
+          data-id="lagos-after-rain"
+          data-name="Lagos After Rain"
+          data-price="₦165,000" data-price-value="165000"
+          data-size="100 ml"
+          data-image="images/product-4.svg"
+          data-notes="Petrichor, vetiver, green mandarin"
+          data-concentration="Eau de Parfum, 21%"
+          data-availability="In stock · ships in 48 hours"
+          data-description="Rain hitting warm concrete, captured with a vetiver base and a green mandarin top note that fades slowly into clean earth.">
+          <button class="product__media" type="button" aria-label="Quick view: Lagos After Rain">
+            <img src="images/product-4.svg" alt="Lagos After Rain eau de parfum bottle" width="600" height="800">
+            <span class="product__tag">Bestseller</span>
+          </button>
+          <div class="product__body">
+            <h3 class="product__name">Lagos After Rain</h3>
+            <p class="product__price">₦165,000 · 100 ml</p>
+            <p class="product__note">Petrichor, vetiver, green mandarin</p>
+            <div class="product__foot">
+              <button class="btn btn--sm js-add" type="button">Add to bag</button>
+              <button class="link-arrow js-view" type="button">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product"
+          data-category="extrait" data-category-label="Extrait de Parfum"
+          data-id="osun-gold"
+          data-name="Osun Gold"
+          data-price="₦295,000" data-price-value="295000"
+          data-size="50 ml"
+          data-image="images/product-5.svg"
+          data-notes="Amber, honey, tobacco, vanilla"
+          data-concentration="Extrait de Parfum, 32%"
+          data-availability="Limited batch · 80 bottles"
+          data-description="An amber built for evening. Golden honey and tobacco leaf over a vanilla base, with a resinous warmth that clings to skin and cloth alike.">
+          <button class="product__media" type="button" aria-label="Quick view: Osun Gold">
+            <img src="images/product-5.svg" alt="Osun Gold extrait de parfum bottle" width="600" height="800">
+            <span class="product__tag">Extrait</span>
+          </button>
+          <div class="product__body">
+            <h3 class="product__name">Osun Gold</h3>
+            <p class="product__price">₦295,000 · 50 ml</p>
+            <p class="product__note">Amber, honey, tobacco, vanilla</p>
+            <div class="product__foot">
+              <button class="btn btn--sm js-add" type="button">Add to bag</button>
+              <button class="link-arrow js-view" type="button">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product"
+          data-category="edp" data-category-label="Eau de Parfum"
+          data-id="white-agbada"
+          data-name="White Agbada"
+          data-price="₦155,000" data-price-value="155000"
+          data-size="100 ml"
+          data-image="images/product-6.svg"
+          data-notes="Cotton flower, iris, white musk"
+          data-concentration="Eau de Parfum, 18%"
+          data-availability="In stock · ships in 48 hours"
+          data-description="Fresh linen and pressed cotton, softened with iris and a clean white musk. The quietest scent in the collection, and the most worn.">
+          <button class="product__media" type="button" aria-label="Quick view: White Agbada">
+            <img src="images/product-6.svg" alt="White Agbada eau de parfum bottle" width="600" height="800">
+            <span class="product__tag">Everyday</span>
+          </button>
+          <div class="product__body">
+            <h3 class="product__name">White Agbada</h3>
+            <p class="product__price">₦155,000 · 100 ml</p>
+            <p class="product__note">Cotton flower, iris, white musk</p>
+            <div class="product__foot">
+              <button class="btn btn--sm js-add" type="button">Add to bag</button>
+              <button class="link-arrow js-view" type="button">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product"
+          data-category="sets" data-category-label="Discovery Set"
+          data-id="discovery-set"
+          data-name="The Discovery Set"
+          data-price="₦48,000" data-price-value="48000"
+          data-size="5 × 2 ml"
+          data-image="images/product-7.svg"
+          data-notes="All five signature fragrances"
+          data-concentration="Eau de Parfum minis"
+          data-availability="In stock · ships in 48 hours"
+          data-description="Five 2 ml vials — Adíre Noir, Ìsẹ̀yìn Bloom, Harmattan, Lagos After Rain and Osun Gold. The cost is credited against your first full bottle.">
+          <button class="product__media" type="button" aria-label="Quick view: The Discovery Set">
+            <img src="images/product-7.svg" alt="Discovery set of five mini fragrance vials" width="600" height="800">
+            <span class="product__tag">Try first</span>
+          </button>
+          <div class="product__body">
+            <h3 class="product__name">The Discovery Set</h3>
+            <p class="product__price">₦48,000 · 5 × 2 ml</p>
+            <p class="product__note">All five signature fragrances</p>
+            <div class="product__foot">
+              <button class="btn btn--sm js-add" type="button">Add to bag</button>
+              <button class="link-arrow js-view" type="button">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product"
+          data-category="home" data-category-label="Home Scent"
+          data-id="atelier-candle"
+          data-name="Atelier Candle No. 14"
+          data-price="₦65,000" data-price-value="65000"
+          data-size="220 g"
+          data-image="images/product-8.svg"
+          data-notes="Fig, cedar, woodsmoke"
+          data-concentration="Scented candle, 60-hour burn"
+          data-availability="In stock · ships in 48 hours"
+          data-description="The smell of the atelier at closing time: fig leaf, cedar shavings and a thread of woodsmoke. Poured into a refillable clay vessel.">
+          <button class="product__media" type="button" aria-label="Quick view: Atelier Candle No. 14">
+            <img src="images/product-8.svg" alt="Atelier candle No. 14 in a clay vessel" width="600" height="800">
+            <span class="product__tag">Home</span>
+          </button>
+          <div class="product__body">
+            <h3 class="product__name">Atelier Candle No. 14</h3>
+            <p class="product__price">₦65,000 · 220 g</p>
+            <p class="product__note">Fig, cedar, woodsmoke</p>
+            <div class="product__foot">
+              <button class="btn btn--sm js-add" type="button">Add to bag</button>
+              <button class="link-arrow js-view" type="button">Details</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="empty-note" id="products-empty" hidden>No fragrances in this category yet — check back next season.</p>
+
+      <div class="rule-top">
+        <p class="lede mb-2">
+          Not sure where to begin? Take the Discovery Set, or book a private scent
+          consultation and we will build a wardrobe around you.
+        </p>
+        <a class="btn" href="contact.html">Book a scent consultation</a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Quick view modal -->
+<div class="modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+  <div class="modal__panel">
+    <button class="modal__close" type="button" aria-label="Close quick view">&times;</button>
+    <div class="modal__media">
+      <img src="images/product-1.svg" alt="">
+    </div>
+    <div class="modal__content"></div>
+  </div>
+</div>
+
+<!-- Shopping bag -->
+<div class="bag" id="bag" aria-hidden="true">
+  <div class="bag__overlay" data-bag-close></div>
+  <aside class="bag__panel" role="dialog" aria-modal="true" aria-labelledby="bag-title">
+    <header class="bag__head">
+      <h2 id="bag-title">Your bag</h2>
+      <button class="bag__close" type="button" data-bag-close aria-label="Close bag">&times;</button>
+    </header>
+    <ul class="bag__items" id="bag-items"></ul>
+    <div class="bag__foot">
+      <p class="bag__total"><span>Subtotal</span> <span id="bag-total">&#8358;0</span></p>
+      <p class="small-note">Complimentary delivery within Lagos on orders above &#8358;150,000.</p>
+      <button class="btn btn--block" type="button" id="bag-checkout">Proceed to checkout</button>
+      <p class="form-status" id="bag-status" aria-live="polite"></p>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand__name">SMELLTEST</span>
+          <span class="brand__tag">Fragrance &amp; Couture · Lagos</span>
+        </a>
+        <p class="mt-1">14 Adeola Odeku Street<br>Victoria Island, Lagos<br>Nigeria</p>
+        <p><a href="mailto:hello@smelltest.com">hello@smelltest.com</a><br>
+           <a href="tel:+2348012345678">+234 801 234 5678</a></p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="trustees.html">Our Trustees</a></li>
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="contact.html">Inquiries &amp; Appointments</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="dom-structure.html">DOM structure</a></li>
+          <li><a href="trustees.html#board">Board of Trustees</a></li>
+          <li><a href="contact.html#faq">Frequently asked</a></li>
+          <li><a href="events.html">Launch events</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>Tuesday – Friday, 10:00 – 17:00</li>
+          <li>Saturday, 10:00 – 16:00</li>
+          <li>Sunday &amp; Monday, closed</li>
+          <li><a href="contact.html">Book a private viewing</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p>© <span data-year>2026</span> SMELLTEST. All rights reserved.</p>
+      <p>CSC 106 / IFT 203 — Introduction to Web Technologies · Tutor-Marked Assessment</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+    <path d="M8 14V2M3 7l5-5 5 5" stroke="currentColor" stroke-width="1.2"/>
+  </svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
